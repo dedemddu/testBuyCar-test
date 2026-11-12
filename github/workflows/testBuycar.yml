@@ -1,23 +1,16 @@
-
 name: CI React
-
 on:
   push:
     branches:
       - main
-
   pull_request:
     branches:
       - main
-
   workflow_dispatch:
-
 jobs:
   quality:
     runs-on: ubuntu-latest
-
     steps:
-
       - name: Descargar código fuente
         uses: actions/checkout@v4
 
